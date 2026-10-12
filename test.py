@@ -12,7 +12,8 @@ try:
 
 except FileNotFoundError:
     with open("ips.txt", "a") as file:
-        file.write("")
+        file.write("8.8.8.8")
+        exit()
 
 for ip in ips:
     ip = ip.strip()
